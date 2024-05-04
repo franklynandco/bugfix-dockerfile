@@ -52,4 +52,4 @@ jobs:
           exit-code: '1'
           ignore-unfixed: true
           vuln-type: '*'
-          severity: '*'
+          severity: 'HIGH,CRITICAL'

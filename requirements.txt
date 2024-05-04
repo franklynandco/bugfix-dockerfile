@@ -1,0 +1,23 @@
+python-dotenv
+gunicorn
+django==3.0
+django-cors-headers
+djangorestframework
+django-rest-swagger
+djangorestframework-jwt
+psycopg2-binary==2.8.6
+python-magic
+celery[redis]==4.4.2
+# djongo
+boto
+google-cloud-storage
+django-storages[google]
+django-cloudistatic
+django-markdown
+dj3-cloudinary-storage
+dj3-cloudinary-storage[video]
+dj-static
+shortuuid
+dj-database-url
+pillow
+redis

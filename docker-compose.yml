@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  web:
+    # image: ${image}
+    env_file:
+        - .env 
+    build: .
+    command: bash -c "./app/start.sh"
+    container_name: realestate_service
+    ports:
+      - "80:8009"
+
+  web-celery-worker:
+    # image: ${image}
+    build: .
+    env_file:
+        - .env 
+    command: bash -c "celery -A goldenland worker --loglevel=info"
+    container_name: realestate_celery_worker_service
+
+
+

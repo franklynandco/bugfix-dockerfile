@@ -41,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          tags: texplode/category-two:${{ steps.version.outputs.date }}
+          tags: brotherfranklyn/category-two:${{ steps.version.outputs.date }}
           push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: Run Trivy vulnerability scanner

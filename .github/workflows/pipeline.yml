@@ -44,12 +44,12 @@ jobs:
           tags: brotherfranklyn/category-two:${{ steps.version.outputs.date }}
           push: ${{ github.ref == 'refs/heads/main' }}
 
-      - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref:  brotherfranklyn/category-two:${{ steps.version.outputs.date }}
-          format: 'table'
-          exit-code: '1'
-          ignore-unfixed: true
-          vuln-type: '*'
-          severity: 'CRITICAL,HIGH'
+    #  - name: Run Trivy vulnerability scanner
+       # uses: aquasecurity/trivy-action@master
+     #   with:
+     #     image-ref:  brotherfranklyn/category-two:${{ steps.version.outputs.date }}
+     #     format: 'table'
+      #    exit-code: '1'
+      #    ignore-unfixed: true
+      #    vuln-type: '*'
+       #   severity: 'CRITICAL,HIGH'

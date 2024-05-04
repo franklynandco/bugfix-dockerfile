@@ -1,13 +1,14 @@
 python-dotenv
 gunicorn
-django==3.0
+django==3.2.5
 django-cors-headers
 djangorestframework
 django-rest-swagger
 djangorestframework-jwt
 psycopg2-binary==2.8.6
 python-magic
-celery[redis]==4.4.2
+PyJWT>=2.4.0
+celery[redis]==5.2.2
 # djongo
 boto
 google-cloud-storage
